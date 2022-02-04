@@ -29,6 +29,6 @@ while counter < verschillendePercentages:
         
         coin['muntjes'] = coin['muntjes'] - amount
         
-        print(exchange.placeLimitOrder("ETH", "sell", amount, targetPrice))
+        print(exchange.placeLimitOrder(coin['symbool'], "sell", amount, targetPrice))
 
     counter += 1
